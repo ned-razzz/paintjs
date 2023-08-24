@@ -53,7 +53,8 @@ function onMouseEnter(event) {
 
 function onMouseLeave(event) {
 	endPaintState()
-}
+	console.log('hello')
+}	
 
 
 if (canvas) {
@@ -74,7 +75,7 @@ function handleColorClick(event) {
 
 Array.from(colorList).forEach(color => color.addEventListener("click", handleColorClick))
 
-//선 굵기 변경
+//선 굵기 변경 
 function handleRangeChange(event) {
 	const strokeSize = event.target.value
 	// console.log(event.target.value)
